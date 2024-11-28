@@ -1,0 +1,230 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ask_about_chair
+  examples: |
+    - coffee chair?
+    - dining chair?
+    - what chairs do you have?
+
+- intent: ask_about_table
+  examples: |
+    - table types?
+    - Table category??
+    - what tables do you have?
+
+- intent: product_type_enquiry
+  examples: |
+    - what are the products available?
+    - list down all the products
+    
+- intent: product_chair_enquiry
+  examples: |
+    - Chair
+    - what are the types of chair that I can buy?
+    - Help me find a suitable chair
+    - I want a chair!
+    - I want a beautiful chair!
+    - Now, show me a chair I can buy
+
+# - intent: product_chair_purpose
+#   examples: | 
+#     - I want a chair for [dining](purpose)
+#     - I want a chair for my [work](purpose)
+#     - I want a chair for [relaxing](purpose)
+
+- intent: product_chair_family_accommodate
+  examples: |
+    - I like the [accommodate](chair_family) chair
+    - [accommodate](chair_family) chair looks suitable to me
+
+- intent: product_chair_family_evo
+  examples: |
+    - [evo](chair_family)
+   
+- intent: product_chair_family_evo_arms
+  examples: |
+    - [Arms](evo_arms_type)
+
+- intent: product_chair_family_evo_cylinder
+  examples: |
+    - [twice](cylinder_size) 
+    
+- intent: product_chair_family_evo_lumbar
+  examples: |
+    - L (evo_lumbar_type)
+   
+- intent: product_chair_family_evo_frameColor
+  examples: |
+    - [Very Black](evo_frameColor_type)
+
+#, [flint](evo_frameColour), [salt](evo_frameColour), etc
+
+# - intent: product_chair_family_evo_meshColor
+#   examples: |
+#     - There are many mesh colors available. Below are some of the options- [clay](evo_meshColour), [dusk](evo_meshColour), [lustre](evo_meshColour), [mist](evo_meshColour), [navy](evo_meshColour)
+
+- intent: product_chair_family_evo_baseColor
+  examples: |
+    - [black](evo_baseColor_type)
+
+
+- intent: product_chair_family_evo_caster_type
+  examples: |
+    - [H](evo_caster_type) 
+
+# - intent: product_purpose_work
+#   examples: |
+#     - We have [evo](chair_subCategory) chair for work related purpose  
+
+# - intent: product_feature_selection
+#   examples: | 
+#     - WNO
+#     - ANO
+#     - FNO
+#     - HNO
+
+- intent: evo_arms_adjustable
+  examples: |
+    - [4D Adjustable Arms](evo_arms_type)
+
+- intent: evo_arms_armless
+  examples: |
+    - [Armless](evo_arms_type)
+
+- intent: evo_cylinder_twice
+  examples: |
+    - [Twice](evo_cyl_type)
+
+- intent: evo_cylinder_thrice
+  examples: |
+    - [Thrice](evo_cyl_type)
+
+- intent: evo_lumbar_L
+  examples: |
+    - [L](evo_lumbar_type)
+
+- intent: evo_lumbar_N
+  examples: |
+    - [N](evo_lumbar_type)
+
+- intent: evo_frameColor_Clay
+  examples: |
+    - [Clay](evo_frameColor_type)
+
+- intent: evo_frameColor_Black
+  examples: |
+    - [Very Black](evo_frameColor_type)
+
+- intent: evo_frameColor_Flint
+  examples: |
+    - [Flint](evo_frameColor_type)
+
+- intent: evo_frameColor_Salt
+  examples: |
+    - [Salt](evo_frameColor_type)
+
+- intent: evo_meshColor_Clay
+  examples: |
+    - [Clay](evo_meshColor_type)
+
+- intent: evo_meshColor_Dusk
+  examples: |
+    - [Dusk](evo_meshColor_type)
+
+- intent: evo_baseColor_Black
+  examples: |
+    - [black](evo_baseColor_type)
+
+- intent: evo_casterType_H
+  examples: |
+    - [H](evo_caster_type)

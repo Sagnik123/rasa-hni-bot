@@ -1,0 +1,116 @@
+version: "3.1"
+
+stories:
+- story: Greet, ask about chair, and provide chair options
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_visit_reason
+
+  - intent: ask_about_chair
+  - action: utter_describe_chair_options
+
+  # - intent: product_chair_enquiry
+  # - action: utter_product_chair_enquiry
+
+  # - intent: product_chair_purpose
+  # - action: utter_product_chair_purpose
+
+- story: product_family_evo
+  steps:
+  - intent: product_chair_family_evo
+  - action: action_product_chair_family_evo
+
+- story: product_family_evo_arms
+  steps:
+  - intent: product_chair_family_evo_arms
+  - action: utter_product_chair_family_evo_arms
+  # TODO- from here, we can have another story for armless, etc
+  - intent: evo_arms_adjustable
+  - action: action_set_sku_on_arms
+  - action: action_product_chair_family_evo
+
+- story: product_family_evo_cylinder
+  steps:
+  - intent: product_chair_family_evo_cylinder
+  - action: utter_product_chair_family_evo_cylinder
+    #TODO
+  - intent: evo_cylinder_twice
+  - action: action_set_sku_on_cylinder
+  - action: action_product_chair_family_evo
+
+- story: product_family_evo_lumbar
+  steps:
+  - intent: product_chair_family_evo_lumbar
+  - action: utter_product_chair_family_evo_lumbar
+    #TODO
+  - intent: evo_lumbar_L
+  - action: action_set_sku_on_lumbar
+  - action: action_product_chair_family_evo
+
+- story: product_family_evo_frameColor
+  steps:
+  - intent: product_chair_family_evo_frameColor
+  - action: utter_product_chair_family_evo_frameColor
+   #TODO
+  - intent: evo_frameColor_Black
+  - action: action_set_sku_on_frameColor
+  - action: action_product_chair_family_evo
+
+- story: product_family_evo_meshColor
+  steps:
+  - intent: product_chair_family_evo_meshColor
+  - action: utter_product_chair_family_evo_meshColor
+   #TODO
+  - intent: evo_meshColor_Dusk
+  - action: action_set_sku_on_meshColor
+  - action: action_product_chair_family_evo
+
+- story: product_family_evo_baseColor
+  steps:
+  - intent: product_chair_family_evo_baseColor
+  - action: utter_product_chair_family_evo_baseColor
+  #TODO
+  - intent: evo_baseColor_Black 
+  - action: action_set_sku_on_baseColor
+  - action: action_product_chair_family_evo
+
+- story: product_family_evo_caster_type
+  steps:
+  - intent: product_chair_family_evo_caster_type
+  - action: utter_product_chair_family_evo_caster_type
+  #TODO
+  - intent: evo_casterType_H
+  - action: action_product_chair_family_evo
+
+  # - action: utter_ask_next_feature
+
+- story: Greet and ask for product type
+  
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_visit_reason
+
+- story: Ask about chair options
+  steps:
+  - intent: ask_about_chair
+  - action: utter_describe_chair_options
+
+- story: Ask about table options
+  steps:
+  - intent: ask_about_table
+  - action: utter_describe_table_options
+
+- story: Product type enquiry
+  steps:
+  - intent: product_type_enquiry
+  - action: utter_product_type_enquiry
+
+- story: Product chair enquiry
+  steps:
+  - intent: product_chair_enquiry
+  - action: utter_product_chair_enquiry
+
+
+

@@ -1,0 +1,315 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  # - affirm
+  # - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_about_chair
+  - ask_about_table
+  - product_type_enquiry
+  - product_chair_enquiry
+  # - product_chair_purpose
+  # - product_chair_family_accommodate
+  - product_chair_family_evo
+  - product_chair_family_evo_arms
+  - product_chair_family_evo_cylinder
+  - product_chair_family_evo_lumbar
+  - product_chair_family_evo_frameColor
+  - product_chair_family_evo_meshColor
+  - product_chair_family_evo_baseColor
+  - product_chair_family_evo_caster_type
+  # - product_purpose_work
+  # - product_feature_selection
+  - evo_arms_adjustable
+  # - evo_arms_armless
+  - evo_cylinder_twice
+  # - evo_cylinder_thrice
+  - evo_lumbar_L
+  # - evo_lumbar_N
+  - evo_frameColor_Clay
+  - evo_frameColor_Black
+  # - evo_frameColor_Flint
+  # - evo_frameColor_Salt
+  - evo_meshColor_Clay
+  - evo_meshColor_Dusk
+  - evo_baseColor_Black
+  - evo_casterType_H
+  # - show_options_features
+
+actions: 
+  - action_set_sku_on_arms
+  - action_set_sku_on_cylinder 
+  - action_set_sku_on_lumbar 
+  - action_set_sku_on_frameColor
+  - action_set_sku_on_meshColor
+  - action_set_sku_on_baseColor
+  - action_set_sku_on_caster_type
+  - action_product_chair_family_evo
+
+entities:
+  - chair_family
+  - product_name
+  - evo_arms_adjustable
+  - evo_arms
+  - evo_cylinder
+  - evo_lumbar
+  - evo_frameColor
+  - evo_meshColor
+  - evo_baseColor
+  - cylinder_size
+  - evo_frameColour
+  - evo_meshColour
+  - evo_baseColour
+  - chair_subCategory
+  - evo_arms_type
+  - evo_cyl_type
+  - evo_lumbar_type
+  - evo_frameColor_type
+  - evo_meshColor_type
+  - evo_baseColor_type
+  - evo_caster_type
+
+slots:
+  # evo_arms_adjustable:
+  #   type: text  
+  #   influence_conversation: false
+  #   mappings:
+  #   - type: from_entity
+  #     entity: evo_arms_adjustable
+
+  evo_arms:
+    type: text  
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: evo_arms
+    
+  evo_cylinder:
+    type: text  
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: evo_cylinder
+
+  evo_lumbar:
+    type: text  
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: evo_lumbar
+
+  evo_frameColor:
+    type: text  
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: evo_frameColor
+
+  evo_meshColor:
+    type: text  
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: evo_meshColor
+
+  evo_baseColor:
+    type: text  
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: evo_baseColor
+
+  evo_caster_type:
+    type: text  
+    influence_conversation: false
+    mappings:
+    - type: from_entity
+      entity: evo_caster_type
+
+  selected_features:
+    type: list
+    influence_conversation: false
+    initial_value: []
+    mappings:
+    - type: from_intent
+      intent: product_chair_family_evo_arms 
+      value: "product_chair_family_evo_arms"
+    - type: from_intent
+      intent: product_chair_family_evo_cylinder
+      value: "product_chair_family_evo_cylinder"
+    - type: from_intent
+      intent: product_chair_family_evo_lumbar
+      value: "product_chair_family_evo_lumbar"
+    - type: from_intent
+      intent: product_chair_family_evo_frameColor
+      value: "product_chair_family_evo_frameColor"
+    - type: from_intent
+      intent: product_chair_family_evo_meshColor
+      value: "product_chair_family_evo_meshColor"
+    - type: from_intent
+      intent: product_chair_family_evo_baseColor
+      value: "product_chair_family_evo_baseColor"
+    - type: from_intent
+      intent: product_chair_family_evo_caster_type
+      value: "product_chair_family_evo_caster_type"  
+
+responses:
+  utter_visit_reason: 
+    - text: "How can I help with HNI products?"
+      buttons: 
+        - title: "Chair"
+          payload: "/ask_about_chair"
+        - title: "Table"
+          payload: "/ask_about_table"
+
+  utter_describe_chair_options:
+    - text: "We have all kinds of chairs including:"
+      buttons: 
+        - title: "Accommodate"
+          payload: "/product_chair_family_accommodate"
+        - title: "Evo"
+          payload: "/product_chair_family_evo"
+
+  utter_describe_table_options:
+    - text: "We have all kinds of tables including:"
+      buttons: 
+        - title: "Table1"
+          payload: "/product_table_family1"
+        - title: "Table2"
+          payload: "/product_table_family2"
+
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye!"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_product_type_enquiry:
+    - text: "We have varied products for home design. Some of them are chairs, tables, and storage."
+
+  utter_product_chair_enquiry:
+    - text: "We have different families of chairs for different purposes ranging from task chairs to coffee or relaxing chairs!"
+
+  utter_product_chair_purpose:
+    - text: "We have all kinds of chairs including:"
+      buttons: 
+        - title: "Work"
+          payload: "/product_purpose_work"
+        - title: "Relaxing"
+          payload: "/product_purpose_relaxing"
+
+  # utter_product_chair_family_evo:
+  #   - text: "Good choice. They are excellent chairs for doing work. Now please select the features for the chair."
+
+  utter_product_chair_family_evo_arms:
+    - text: "The options for arms are:"
+      buttons:
+        - title: "4D Adjustable arms"
+          payload: "/evo_arms_adjustable"
+        - title: "Armless"
+          payload: "/evo_arms_armless"
+
+  utter_product_chair_family_evo_cylinder:
+    - text: "The options for cylinders are:"
+      buttons:
+        - title: "Two"
+          payload: "/evo_cylinder_twice"
+        - title: "Thrice"
+          payload: "/evo_cylinder_thrice"
+
+  utter_product_chair_family_evo_lumbar:
+    - text: "The options for lumbar support are:"
+      buttons:
+        - title: "L"
+          payload: "/evo_lumbar_L"
+        - title: "N"
+          payload: "/evo_lumbar_N"
+
+  utter_product_chair_family_evo_frameColor:
+    - text: "The options for frame colors are:"
+      buttons:
+        - title: "Black"
+          payload: "/evo_frameColor_Black"
+        - title: "Flint"
+          payload: "/evo_meshColor_Flint"
+        - title: "Salt"
+          payload: "/evo_meshColor_Salt"
+
+  utter_product_chair_family_evo_meshColor:
+    - text: "The options for mesh colors are:"
+      buttons:
+        - title: "Clay"
+          payload: "/evo_frameColor_Clay"
+        - title: "Dusk"
+          payload: "/product_feature_selection"
+        - title: "Lustre"
+          payload: "/product_feature_selection"
+        - title: "Mist"
+          payload: "/product_feature_selection"
+        - title: "Navy"
+          payload: "/product_feature_selection"
+
+  utter_product_chair_family_evo_baseColor:
+    - text: "The options for base colors are:"
+      buttons:
+        - title: "Black"
+          payload: "/evo_baseColor_Black"
+        - title: "Flint"
+          payload: "/product_feature_selection"
+        - title: "Polished Aluminium"
+          payload: "/product_feature_selection"
+
+  utter_product_chair_family_evo_caster_type:
+    - text: "The options for caster types are:"
+      buttons:
+        - title: "H"
+          payload: "/evo_casterType_H"
+        - title: "B"
+          payload: "/product_feature_selection"
+        - title: "E9"
+          payload: "/product_feature_selection"
+        - title: "PAL"
+          payload: "/product_feature_selection"
+        - title: "ST"
+          payload: "/product_feature_selection"
+        - title: "T"
+          payload: "/product_feature_selection"
+
+  utter_ask_next_feature:
+    - text: "Please select the next feature for the chair."
+      buttons:
+        - title: "Arms"
+          payload: "/product_chair_family_evo_arms"
+        - title: "Cylinder"
+          payload: "/product_chair_family_evo_cylinder"
+        - title: "Lumbar"
+          payload: "/product_chair_family_evo_lumbar"
+        - title: "Frame Color"
+          payload: "/product_chair_family_evo_frameColor"
+        - title: "Mesh Color"
+          payload: "/product_chair_family_evo_meshColor"
+        - title: "Base Color"
+          payload: "/product_chair_family_evo_baseColor"
+        - title: "Caster Type"
+          payload: "/product_chair_family_evo_caster_type"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

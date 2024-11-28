@@ -1,0 +1,5 @@
+pandas
+rasa
+pymysql
+openpyxl
+spacy
