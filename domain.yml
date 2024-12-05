@@ -39,6 +39,9 @@ intents:
   - evo_baseColor_Black
   - evo_casterType_H
   # - show_options_features
+  - show_image
+  - show_pdf
+  - show_video
 
 actions: 
   - action_set_sku_on_arms
@@ -49,6 +52,9 @@ actions:
   - action_set_sku_on_baseColor
   - action_set_sku_on_caster_type
   - action_product_chair_family_evo
+  - action_show_image
+  - action_show_pdf
+  - action_show_video
 
 entities:
   - chair_family
@@ -184,10 +190,15 @@ responses:
 
   utter_greet:
     - text: "Hey! How are you?"
-
+      image: "http://localhost:5005/assets/kitty-cat-kitten-pet-45201.jpeg"
   utter_cheer_up:
     - text: "Here is something to cheer you up:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
+      # attachment: { "type":"video", "payload":{ "src": "https://youtube.com/embed/9C1Km6xfdMA" } }
+      # image: "https://i.imgur.com/B8ta5Aa.jpeg"
+      custom: 
+        payload: pdf_attachment
+        title: "PDF Title"
+        url: "https://ptgmedia.pearsoncmg.com/images/9780133387520/samplepages/0133387526.pdf"
 
   utter_did_that_help:
     - text: "Did that help you?"

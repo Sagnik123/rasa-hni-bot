@@ -1,6 +1,21 @@
 version: "3.1"
 
 stories:
+- story: Show an image
+  steps:
+    - intent: show_image
+    - action: action_show_image
+
+- story: Show a PDF
+  steps:
+    - intent: show_pdf
+    - action: action_show_pdf
+      
+- story: Show a video
+  steps:
+    - intent: show_video
+    - action: action_show_video
+
 - story: Greet, ask about chair, and provide chair options
   steps:
   - intent: greet
@@ -111,6 +126,8 @@ stories:
   steps:
   - intent: product_chair_enquiry
   - action: utter_product_chair_enquiry
+
+
 
 
 

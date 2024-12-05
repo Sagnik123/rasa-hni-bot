@@ -1,0 +1,17 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJw9jEEOgzAMBL+SByDUXvkKQpZLjbBKHRQ77SHK37Fo6G1XO7NjqV0oe6IP4GwcZQjlF0DwTUNoZWM1Emd1i6YOLYSWE3kc7/1t6sKe4jPP1rqTWSk5SGJsfIKX84ddY/Fft1BfgI+YDdoGX7YVLqXW6QALST+Q": "action_ask_about_product_with_features",
+    "eJzFjkEOgkAMRa8yByBGtlyFkKZAjY3YIdMOLibc3UYHt7pz93/63k/7sjehrIk2wMk4ShfKO4DgnbpQy8JqJM7qEk0duhBaTuSxb0/noQlrinOerHYns1JykMTY+AUezgd2jcV33UK9AY4xG9QbPNiucCj7b29+W/nj/8MT0RyH0g==": "utter_list_of_products",
+    "eJzNkMEKwjAQRH8lH1CkXvsrpSyxbnGxJiWZ6CH037vUxGu96W2GfTMM2+e1MXkJ/CQ7QrzrTH4LcvbBnSlmlgh2ysbZIyo0sUUKrLI/n9qhMUvw1zSieCVT5KAgOwhkB2vmA2tMnPZqysY72YtPoHKjl+BGNbJ+N/Oo5W/3J4DD/mXyU6346d5hA7MvyZs=": "action_listen",
+    "eJxVjEEKwzAMBL+iB4SSXvUVY0xwVCpw5WLLIWD89yokOfS2y8yu62OC/i20hSUqZ0HoZwiyfAjhKomrkphbU9aKxySvLWpgWWlHcM/H7A23SsUoibIymej+RD8Bix0pwos0vsNNW0lj+B/mnDWx": "action_order_product",
+    "eJy1jkEKAjEMRa+SAwyi21yllDK0EQM1lTQVoczdjegs3Llxl897P/wwtwXmTeme1mzcBGG+jyTrlRA+oXI3End7bdbxVWllZEsshR4I4XQ4RsejkzolMTYmF8OXGBdg8UeGcCbLl7TToXX7bUnTQrr3/jwoPgHfx2ye": "action_listen",
+    "eJxVjEsKwzAMRK+iA4SSbHUVY0ywtRAkcmrLocX47lVou8huPm/G9TFBPwqdYY3KWRD6VwRZd0L4mY2rkhhbt6wVr0lOLWpgSfRCcMtj9la3SsVaEmVlMtDdQD8Bix0pwj8neTYu7zH8B33UNQI=": "utter_product_details",
+    "eJy1jkEKQjEMRK+SA3xEt7lKKaX8ZhGoqTapKOXf3Yj+hStX7iYzb8KEuS0wL51uKa/GTRDmWyTJZ0L4HJXVSJzV2kzxVWllrJZYCt0RwulwjB4Ppe4pibExORi+wLgAiz8yhN0nuQ7uj+3HjmFGPe2lQpa56l/3xCe4tGvA": "action_ask_about_components",
+    "eJzFjk0OAiEMha/CASZGt1yFEILQRSPTjrQYDZm7i3Fm4cqVcdfX95PP9XUyfalwCzEpMlnT30egOIM1mygoCjSyUljFviqcW9KAlOFujTsdjn7YTaAOF0hREUbQfQT9ZJDGkFqz/4GuDetj/cLRVKGGvZRBIxb5I88molxCPHPTkHhemMbUb6n8E5/1pOA=": "action_listen",
+    "eJzFjkEKAjEMRa/SAwyi216lDCHWIMExHZrUTZm7m8Eight37vLJe5+f+jaFvlZ6AGbjIjH01wGCd4phhIXVSJzVpZjGXeFMUFGuDqXT4ThPYa3l0rKN7HBTqs6SGBuTa+lDe/Nusni7i6g3wHNpBuO3/Tbv2/vD0vkJ4Jt6xw==": "action_listen",
+    "eJwti00KgCAQRq8yB4iorVcRkbBZDNhYOgYh3r2J3H0/79nWJ2hnxttvQSixgfYHz9uBBkaJVARZ2RKTFPMpaa9BDNh1XpwetWDWHVlICBWxA3ETEKus7Fg88lUpP727FwipMBQ=": "action_describe_product",
+    "eJytjkEKAjEMRa+SAwyi216llDJ2/iIwptqkgpS5uxF7ABfukv/fI4njWGjcG555LcZVAo3vkGW9IdBcdlaDOKt7NQ0fpW69WKB4OZ2TF13RPIcYG8OROJG0EIvLzs4kQx6d2+v47fYGLY2vyFP/+xfpDWt3Yok=": "action_listen",
+    "eJzFjkEOwjAMBL+SB1QIrvlKVFkhWGC1OFXswCHq33HVgDhy4+aVZ1Yb2jq4thR8QExKmb1r+wEc7+hdDzOJIhsrc1bxm0IJoUS+GhROh+M4uKXkS03as8FVsBiLrKSEpoUv7cObSWztJkaZIJ5zVei/9bd5csvPt7K3/2Pq+AJox3s7": "action_listen"
+  }
+}

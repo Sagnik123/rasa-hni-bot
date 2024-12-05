@@ -228,3 +228,22 @@ nlu:
 - intent: evo_casterType_H
   examples: |
     - [H](evo_caster_type)
+
+- intent: show_image
+  examples: |
+    - Show me an image
+    - Can you display an image?
+    - I want to see a picture
+
+- intent: show_pdf
+  examples: |
+    - Show me a PDF
+    - Can you provide a PDF?
+    - I need a PDF document
+
+- intent: show_video
+  examples: |
+    - Show me a video
+    - Can you embed a video?
+    - I want to see a video
+
